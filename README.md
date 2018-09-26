@@ -12,13 +12,13 @@ There are a few live distibutions which support the UEFI Secure Boot (Debian liv
 
 The aim of the liveng project is to give the Community a set of best practices in order to transform a common Debian Linux live into a live(ng) operating system which does:
 
-* encrypted persistence;
+* native encrypted persistence;
 * kernel update (on a live ISO 9660 filesystem!);
-* UEFI, with UEFI Secure Boot compatibility.
+* UEFI, with UEFI Secure Boot compatibility, with a real efi partition.
   
 As the base of liveng we have chosen the Debian Stretch live distribution.
 
 This Github repository hosts:
 
-    * source documentation files for Read the Docs, liveng.readthedocs.io
-    * a set of proof-of-concepts scripts
+* source documentation files for Read the Docs, see https://liveng.readthedocs.io;
+* a set of proof-of-concepts scripts.
