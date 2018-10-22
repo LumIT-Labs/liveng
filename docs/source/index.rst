@@ -19,7 +19,7 @@ The aim of the liveng project is to give the Community a set of best practices i
   
 As the base of liveng we have chosen the Debian Stretch live distribution.
 
-Mon-K Data Protection's `Secure-K OS <https://mon-k.com/products/secure-k-personal/>`_ is built according to liveng's best practices.
+liveng is a `LumIT Labs <about.html>`_ project.
 
 
 Table of contents
@@ -29,3 +29,15 @@ Table of contents
    
    standard-live
    setup
+   liveng-structure
+   secure-boot
+   persistence
+   kernel-update
+   kernel-update-debian
+   kernel-update-improvements
+   about
+   liveng-based-systems
+   license
+
+
+
