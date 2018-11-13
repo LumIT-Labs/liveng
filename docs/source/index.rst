@@ -9,7 +9,9 @@ A live operating system allows booting from a removable medium, such a USB key, 
 Why liveng
 ^^^^^^^^^^
 
-None of the existing live operating systems provide a **kernel update feature**: the kernel and the initrd are the only components that a live operating system cannot update, because they lay outside of the data persistence partition (if any) and usually the system partition is ISO9660-formatted. This will soon lead to an outdated operating system, particularly unsafe if used as a desktop-replacement or for security-critical activities.
+None of the existing ISO9660-based live operating systems provide a **kernel update feature**: the kernel and the initrd are the only components that a live operating system cannot update, because they lay outside of the data persistence partition and the system partition is ISO9660-formatted, so not writeable - which is the best option for a live, because of its strength against data corruption.
+
+This will soon lead to an outdated operating system, particularly unsafe if used as a desktop-replacement or for security-critical activities.
 
 
 More features
@@ -19,12 +21,12 @@ Once written onto a USB key, a common live operating system is usually made up o
 
 If you need a live system which does data persistence, you will find (or need to create) another partition, usually an EXT4 one. This is pretty common as well.
 
-There are only a few live distibutions which support the UEFI Secure Boot (Debian lives do not), and, as stated before, no distribution is capable of updating the kernel maintaining a ISO9660 filesystem, which is the best option for a live.
+There are only a few live distibutions which support the UEFI Secure Boot (Debian lives do not), and, as stated before, no distribution is capable of updating the kernel maintaining a ISO9660 filesystem.
 
 The full aim of the liveng project is to give the Community a set of best practices in order to turn a common Debian Linux live into a live(ng) operating system which features:
 
 * native **encrypted persistence**;
-* kernel update (on a live ISO 9660 filesystem!);
+* **kernel update (on a live ISO 9660 filesystem)**;
 * UEFI, with **UEFI Secure Boot compatibility**, with a real efi partition.
   
 As the base of liveng we have chosen the Debian Stretch live distribution.
