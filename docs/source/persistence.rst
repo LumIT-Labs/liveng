@@ -74,7 +74,7 @@ First of all, we have to add the parameter to the list of kernel boot parameters
 
     umount /mnt
 
-Then we must initialize the third partition as a LUKS one, format and label it (of course, we are overwriting what we've just done the step before)::
+Then we must initialize the fourth partition as a LUKS one, format and label it (of course, we are overwriting what we've just done the step before)::
 
     # Recreate partition.
     printf "d\n4\nw\nY\n" | gdisk ${device} && sync
