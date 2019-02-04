@@ -154,7 +154,7 @@ Will display::
     config    initrd.img    System.map    vmlinuz
 
 
-BRUB bootloader (UEFI)
+GRUB bootloader (UEFI)
 ^^^^^^^^^^^^^^^^^^^^^^
 
 The GPT partitioning scheme has been set up and the system partitions have been created. 
